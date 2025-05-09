@@ -2,13 +2,41 @@
 
 ![image](https://github.com/user-attachments/assets/1821b39f-70be-4943-b193-ff8ac46d5b1f)
 
-## 🔍 Git Nedir?
+<details>
+  
+<summary>🔍 Git Nedir?</summary>
+<hr>
 
 Git, dağıtık bir versiyon kontrol sistemidir (VCS). Yazılımcıların projelerdeki dosya değişikliklerini takip etmelerine, geri almalarına, dallandırmalarına(branch) ve farklı sürümleri yönetmelerine olanak tanır.
 
 ![image](https://github.com/user-attachments/assets/86aa12b7-a1ff-489d-9ca6-0f65e3c2b5d8)
 
-### Git Bash - Commit Example
+</details>
+
+<hr>
+
+<details>
+  
+<summary>☁️ GitHub Nedir?</summary>
+<hr>
+
+GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliği yapmak için kullanılan bulut tabanlı bir platformdur.
+
+![image](https://github.com/user-attachments/assets/8538d93f-17b9-4952-9380-f7499f0aca40)
+
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🛠️ Sık Kullanılan Git Komutları</summary>
+<hr>
+<details>
+  
+<summary>🖥️ Git Bash - Commit Example</summary>
+
+<hr>
 
 Proje dizinine gidilir. **cd source/repos/project**
 
@@ -24,15 +52,15 @@ Sırasıyla komutlar çalıştırılır.
 
 **5.** git push origin develop
 
-## ☁️ GitHub Nedir?
+</details>
 
-GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliği yapmak için kullanılan bulut tabanlı bir platformdur.
+<hr>
 
-![image](https://github.com/user-attachments/assets/8538d93f-17b9-4952-9380-f7499f0aca40)
+<details>
+    
+<summary>🔰 Temel Git Komutları</summary>
 
-## 🛠️ Sık Kullanılan Git Komutları
-
-### 🔰 Temel Git Komutları
+<hr>
 
 - **git init** ➡️ Yeni bir Git reposu oluşturur.
 - **git clone <repo_url>** ➡️ Mevcut bir Git reposunu kopyalar.
@@ -45,7 +73,15 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 - **git pull origin <branch_adı>** ➡️ Remote repodaki değişiklikleri local repoya çeker.
 - **git fetch** ➡️ Remote repodaki değişiklikleri alır ancak merge yapmaz.
 
-### 🌿 Branch Yönetimi
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🌿 Branch Yönetimi</summary>
+
+<hr>
 
 - **git branch** ➡️ Mevcut branchleri listeler.
 - **git branch <yeni_branch_adı>** ➡️ Yeni bir branch oluşturur.
@@ -61,7 +97,15 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 - **git stash list** ➡️ Saklanan değişiklikleri listeler.
 - **git stash drop** ➡️ Belirtilen saklanan değişikliği siler.
 
-### 🧾 Geçmiş ve Değişiklik Takibi
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🧾 Geçmiş ve Değişiklik Takibi</summary>
+
+<hr>
 
 - **git log** ➡️ Commit geçmişini görüntüler.
 - **git log --oneline** ➡️ Commit geçmişini kısa formatta gösterir.
@@ -72,7 +116,15 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 - **git reset --soft <commit_id>** ➡️ Belirtilen commit’e geri döner ancak değişiklikleri korur.
 - **git revert <commit_id>** ➡️ Belirtilen commit’i geri alır ancak yeni bir commit olarak ekler.
 
-### 🌐 Uzak Depo Yönetimi
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🌐 Uzak Repo Yönetimi</summary>
+
+<hr>
 
 - **git remote -v** ➡️ Remote repoları listeler.
 - **git remote add <name> <repo_url>** ➡️ Yeni bir remote repo ekler.
@@ -81,7 +133,15 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 - **git push origin --delete <branch_adı>** ➡️ Remote repodaki bir branch'i siler.
 - **git pull --rebase** ➡️ Remote repodaki değişiklikleri alır ve mevcut commit’leri yeniden düzenler.
 
-### 🔖 Etiketleme ve Sürümleme
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🔖 Etiketleme ve Sürümleme</summary>
+
+<hr>
 
 - **git tag <etiket_adı>** ➡️ Belirtilen commit’e bir etiket ekler.
 - **git tag -a <etiket_adı> -m "Açıklama"** ➡️ Açıklamalı bir etiket ekler.
@@ -91,50 +151,122 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 - **git tag -d <etiket_adı>** ➡️ Belirtilen etiketi siler.
 - **git push origin :refs/tags/<etiket_adı>** ➡️ Remote repodaki etiketi siler.
 
-### ⚡ Alias (Kısayollar) Kullanımı
+</details>
+
+<hr>
+
+<details>
+  
+<summary>⚡ Alias (Kısayollar) Kullanımı</summary>
+
+<hr>
 
 - **git config --global alias.st status** ➡️ git st komutunu git status olarak çalıştırır.
 - **git config --global alias.co checkout** ➡️ git co komutunu git checkout olarak çalıştırır.
 - **git config --global alias.br branch** ➡️ git br komutunu git branch olarak çalıştırır.
 
-### 🧩 Git Hooks (Otomasyon)
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🧩 Git Hooks (Otomasyon)</summary>
+
+<hr>
 
 - **pre-commit** ➡️ Commit işleminden önce çalıştırılır.
 - **commit-msg** ➡️ Commit mesajı yazıldıktan sonra çalıştırılır.
 - **pre-push** ➡️ Push işleminden önce çalıştırılır.
 
-### 📦 Submodules (Alt Depolar)
+</details>
+
+<hr>
+
+<details>
+  
+<summary>📦 Submodules (Alt Depolar)</summary>
+
+<hr>
 
 - **git submodule add <repo_url>** ➡️ Mevcut projeye bir alt modül ekler.
 - **git submodule update --init --recursive** ➡️ Alt modülleri günceller ve başlatır.
 
-### 🧱 Worktrees (Çoklu Çalışma Dizinleri)
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🧱 Worktrees (Çoklu Çalışma Dizinleri)</summary>
+
+<hr>
 
 - **git worktree add ../yeni_dizin <branch_adı>** ➡️ Yeni bir çalışma dizini oluşturur.
 - **git worktree list** ➡️ Mevcut çalışma dizinlerini listeler.
 
-### 🧊 LFS (Large File Storage)
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🧊 LFS (Large File Storage)</summary>
+
+<hr> 
 
 - **git lfs install** ➡️ Git LFS’i yükler.
 - **git lfs track "*.psd"** ➡️ Belirtilen dosya türünü LFS ile takip eder.
 
-### 🐞 Bisect (Hatalı Commit’i Bulma)
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🐞 Bisect (Hatalı Commit’i Bulma)</summary>
+
+<hr>
 
 - **git bisect start** ➡️ Bisect işlemini başlatır.
 - **git bisect bad** ➡️ Hatalı commit’i işaretler.
 - **git bisect good**➡️ Çalışan commit’i işaretler.
 
-### 🔁 Reflog (Commit Geçmişi)
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🔁 Reflog (Commit Geçmişi)</summary>
+
+<hr>
 
 - **git reflog** ➡️ Tüm Git işlemlerinin geçmişini gösterir.
 - **git reset --hard HEAD@{3}** ➡️ 3 işlem önceki duruma geri döner.
 
-### 🪞 Mirroring  (Depoyu Başka Bir Uzak Depoya Kopyalama)
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🪞 Mirroring  (Depoyu Başka Bir Uzak Depoya Kopyalama)</summary>
+
+<hr>
 
 - **git clone --mirror <repo_url>** ➡️ Repoyu aynen klonlar.
 - **git push --mirror <yeni_repo_url>** ➡️ Repoyu başka bir remote repoya aynen kopyalar.
 
-### 🌿 Branch Yönetimi
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🌿 İleri Düzey Branch Yönetimi</summary>
+
+<hr>
 
 - **git branch -vv** ➡️ Tüm branchlerin detaylarını ve takip ettiği remote branch'i gösterir.
 - **git branch --contains <commit_id>** ➡️ Belirtilen commit’i içeren branch'leri listeler.
@@ -143,7 +275,15 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 - **git checkout -** ➡️ Önceki branch'e geri döner.
 - **git checkout --orphan <yeni_branch_adı>** ➡️ Yeni bir branch oluşturur ancak önceki commit’leri içermez.
 
-### 🔀 Merge ve Rebase İşlemleri
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🔀 Merge ve Rebase İşlemleri</summary>
+
+<hr>
 
 - **git merge --squash <branch_adı>** ➡️ Merge işlemi sırasında tüm commit’leri tek bir commit’e sıkıştırır.
 - **git merge --no-commit** ➡️ Merge işlemini yapar ancak commit oluşturmaz.
@@ -153,7 +293,15 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 - **git rebase --skip** ➡️ Rebase sırasında hatalı commit’i atlar.
 - **git rebase --edit-todo** ➡️ Rebase sırasında commit listesini düzenler.
 
-### 📥 Stash Kullanımı
+</details>
+
+<hr>
+
+<details>
+  
+<summary>📥 Stash Kullanımı</summary>
+
+<hr>
 
 - **git stash push -m "Geçici değişiklikler"** ➡️ Saklanan değişikliklere açıklama ekler.
 - **git stash apply stash@{2}** ➡️ Belirtilen stash’i geri yükler.
@@ -161,7 +309,15 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 - **git stash show -p stash@{1}** ➡️ Belirtilen stash’in detaylarını gösterir.
 - **git stash branch yeni_branch** ➡️ Saklanan değişikliklerle yeni bir branch oluşturur.
 
-### 🌐 Uzak Depo Yönetimi
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🌐 İleri Düzey Uzak Repo Yönetimi</summary>
+
+<hr>
 
 - **git remote set-url origin <yeni_url>** ➡️ Remote repo URL’sini değiştirir.
 - **git remote prune origin** ➡️ Remote repoda artık var olmayan branch'leri temizler.
@@ -169,7 +325,15 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 - **git push --mirror <yeni_repo_url>** ➡️ Mevcut repoyu aynen başka bir remote repoya kopyalar.
 - **git fetch --prune** ➡️ Remote repodaki silinmiş branchleri local repodan kaldırır.
 
-### 🔍 Hata Ayıklama ve Analiz
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🔍 Hata Ayıklama ve Analiz</summary>
+
+<hr>
 
 - **git fsck --full** ➡️ Repodaki tüm nesneleri kontrol eder ve hataları gösterir.
 - **git reflog expire --expire=now --all** ➡️ Tüm reflog kayıtlarını temizler.
@@ -177,9 +341,21 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 - **git blame -C -M <dosya_adı>** ➡️ Dosyadaki her satırın hangi commit tarafından değiştirildiğini detaylı gösterir.
 - **git grep -n "hata"** ➡️ Repoda belirli bir kelimeyi içeren satırları ve satır numaralarını gösterir.
 
-### 🚀 Performans ve Optimizasyon
+</details>
+
+<hr>
+
+<details>
+  
+<summary>🚀 Performans ve Optimizasyon</summary>
+
+<hr>
 
 - **git repack -a -d** ➡️ Repoyu yeniden paketleyerek boyutunu küçültür.
 - **git prune --expire=now** ➡️ Kullanılmayan nesneleri hemen temizler.
 - **git gc --auto** ➡️ Repoyu otomatik olarak temizler ve optimize eder.
 - **git config --global core.compression 9** ➡️ Git’in veri sıkıştırma seviyesini artırır.
+
+</details>
+
+</details>
