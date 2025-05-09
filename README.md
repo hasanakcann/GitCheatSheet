@@ -39,7 +39,7 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 - **git status** ➡️ Çalışma dizininin durumunu gösterir.
 - **git add <dosya_adı>** ➡️ Belirtilen dosyayı stage'e (staging area) ekler.
 - **git add .** ➡️ Tüm değişiklikleri stage'e ekler.
-- **git commit -m "Açıklama"** ➡️ Stage'e alınan değişiklikleri depoya kaydeder.
+- **git commit -m "Açıklama"** ➡️ Stage'e alınan değişiklikleri repoya kaydeder.
 - **git commit --amend -m "Yeni açıklama"** ➡️ Son commit mesajını değiştirir.
 - **git push origin <branch_adı>** ➡️ Local değişiklikleri remote repoya gönderir.
 - **git pull origin <branch_adı>** ➡️ Remote repodaki değişiklikleri local repoya çeker.
