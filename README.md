@@ -4,7 +4,7 @@
 
 ## 🔍 Git Nedir?
 
-Git, dağıtık bir versiyon kontrol sistemidir (VCS). Yazılımcıların projelerdeki dosya değişikliklerini takip etmelerine, geri almalarına, dallandırmalarına ve farklı sürümleri yönetmelerine olanak tanır.
+Git, dağıtık bir versiyon kontrol sistemidir (VCS). Yazılımcıların projelerdeki dosya değişikliklerini takip etmelerine, geri almalarına, dallandırmalarına(branch) ve farklı sürümleri yönetmelerine olanak tanır.
 
 ![image](https://github.com/user-attachments/assets/86aa12b7-a1ff-489d-9ca6-0f65e3c2b5d8)
 
@@ -34,28 +34,28 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 
 ### 🔰 Temel Git Komutları
 
-- **git init** ➡️ Yeni bir Git deposu oluşturur.
-- **git clone <repo_url>** ➡️ Mevcut bir Git deposunu kopyalar.
+- **git init** ➡️ Yeni bir Git reposu oluşturur.
+- **git clone <repo_url>** ➡️ Mevcut bir Git reposunu kopyalar.
 - **git status** ➡️ Çalışma dizininin durumunu gösterir.
-- **git add <dosya_adı>** ➡️ Belirtilen dosyayı sahneye (staging area) ekler.
-- **git add .** ➡️ Tüm değişiklikleri sahneye ekler.
-- **git commit -m "Açıklama"** ➡️ Sahneye alınan değişiklikleri depoya kaydeder.
+- **git add <dosya_adı>** ➡️ Belirtilen dosyayı stage'e (staging area) ekler.
+- **git add .** ➡️ Tüm değişiklikleri stage'e ekler.
+- **git commit -m "Açıklama"** ➡️ Stage'e alınan değişiklikleri depoya kaydeder.
 - **git commit --amend -m "Yeni açıklama"** ➡️ Son commit mesajını değiştirir.
-- **git push origin <branch_adı>** ➡️ Yerel değişiklikleri uzak depoya gönderir.
-- **git pull origin <branch_adı>** ➡️ Uzak depodaki değişiklikleri yerel depoya çeker.
-- **git fetch** ➡️ Uzak depodaki değişiklikleri alır ancak birleştirme yapmaz.
+- **git push origin <branch_adı>** ➡️ Local değişiklikleri remote repoya gönderir.
+- **git pull origin <branch_adı>** ➡️ Remote repodaki değişiklikleri local repoya çeker.
+- **git fetch** ➡️ Remote repodaki değişiklikleri alır ancak merge yapmaz.
 
 ### 🌿 Branch Yönetimi
 
-- **git branch** ➡️ Mevcut dalları (branch) listeler.
-- **git branch <yeni_branch_adı>** ➡️ Yeni bir dal oluşturur.
-- **git branch -d <branch_adı>** ➡️ Belirtilen dalı siler.
-- **git branch -D <branch_adı>** ➡️ Zorla dalı siler.
-- **git checkout <branch_adı>** ➡️ Belirtilen dala geçiş yapar.
-- **git checkout -b <yeni_branch_adı>** ➡️ Yeni bir dal oluşturur ve ona geçiş yapar.
+- **git branch** ➡️ Mevcut branchleri listeler.
+- **git branch <yeni_branch_adı>** ➡️ Yeni bir branch oluşturur.
+- **git branch -d <branch_adı>** ➡️ Belirtilen branch siler.
+- **git branch -D <branch_adı>** ➡️ Zorla branch'i siler.
+- **git checkout <branch_adı>** ➡️ Belirtilen branch'e geçiş yapar.
+- **git checkout -b <yeni_branch_adı>** ➡️ Yeni bir branch oluşturur ve ona geçiş yapar.
 - **git cherry-pick <commit_hash>** ➡️ Bir branch'teki belirli bir değişikliği, başka bir branch'e aktarmak için kullanılır. commit_hash: Cherry-pick yapmak istediğiniz commit'in hash'idir (örneğin, xyz1234 gibi).
-- **git merge <branch_adı>** ➡️ Belirtilen dalı mevcut dala birleştirir.
-- **git rebase <branch_adı>** ➡️ Mevcut dalı başka bir dalın üzerine yeniden düzenler.
+- **git merge <branch_adı>** ➡️ Belirtilen branch'i mevcut branch'e birleştirir.
+- **git rebase <branch_adı>** ➡️ Mevcut branch'i başka bir branch'in üzerine yeniden düzenler.
 - **git stash** ➡️ Geçici olarak değişiklikleri saklar.
 - **git stash pop** ➡️ Saklanan değişiklikleri geri yükler.
 - **git stash list** ➡️ Saklanan değişiklikleri listeler.
@@ -65,31 +65,31 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 
 - **git log** ➡️ Commit geçmişini görüntüler.
 - **git log --oneline** ➡️ Commit geçmişini kısa formatta gösterir.
-- **git log --graph --decorate --oneline** ➡️ Commit geçmişini dallanma yapısıyla gösterir.
+- **git log --graph --decorate --oneline** ➡️ Commit geçmişini branch yapısıyla gösterir.
 - **git diff** ➡️ Çalışma dizini ile en son commit arasındaki farkları gösterir.
-- **git diff <branch1> <branch2>** ➡️ İki dal arasındaki farkları gösterir.
+- **git diff <branch1> <branch2>** ➡️ İki branch arasındaki farkları gösterir.
 - **git reset --hard <commit_id>** ➡️ Belirtilen commit’e geri döner ve tüm değişiklikleri siler.
 - **git reset --soft <commit_id>** ➡️ Belirtilen commit’e geri döner ancak değişiklikleri korur.
 - **git revert <commit_id>** ➡️ Belirtilen commit’i geri alır ancak yeni bir commit olarak ekler.
 
 ### 🌐 Uzak Depo Yönetimi
 
-- **git remote -v** ➡️ Uzak depoları listeler.
-- **git remote add <name> <repo_url>** ➡️ Yeni bir uzak depo ekler.
-- **git remote remove <name>** ➡️ Belirtilen uzak depoyu kaldırır.
-- **git push --force** ➡️ Zorla değişiklikleri uzak depoya gönderir.
-- **git push origin --delete <branch_adı>** ➡️ Uzak depodaki bir dalı siler.
-- **git pull --rebase** ➡️ Uzak depodaki değişiklikleri alır ve mevcut commit’leri yeniden düzenler.
+- **git remote -v** ➡️ Remote repoları listeler.
+- **git remote add <name> <repo_url>** ➡️ Yeni bir remote repo ekler.
+- **git remote remove <name>** ➡️ Belirtilen remote repoyu kaldırır.
+- **git push --force** ➡️ Zorla değişiklikleri remote repoya gönderir.
+- **git push origin --delete <branch_adı>** ➡️ Remote repodaki bir branch'i siler.
+- **git pull --rebase** ➡️ Remote repodaki değişiklikleri alır ve mevcut commit’leri yeniden düzenler.
 
 ### 🔖 Etiketleme ve Sürümleme
 
 - **git tag <etiket_adı>** ➡️ Belirtilen commit’e bir etiket ekler.
 - **git tag -a <etiket_adı> -m "Açıklama"** ➡️ Açıklamalı bir etiket ekler.
 - **git tag** ➡️ Mevcut etiketleri listeler.
-- **git push origin <etiket_adı>** ➡️ Etiketi uzak depoya gönderir.
-- **git push origin --tags** ➡️ Tüm etiketleri uzak depoya gönderir.
+- **git push origin <etiket_adı>** ➡️ Etiketi remote repoya gönderir.
+- **git push origin --tags** ➡️ Tüm etiketleri remote repoya gönderir.
 - **git tag -d <etiket_adı>** ➡️ Belirtilen etiketi siler.
-- **git push origin :refs/tags/<etiket_adı>** ➡️ Uzak depodaki etiketi siler.
+- **git push origin :refs/tags/<etiket_adı>** ➡️ Remote repodaki etiketi siler.
 
 ### ⚡ Alias (Kısayollar) Kullanımı
 
@@ -131,25 +131,25 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 
 ### 🪞 Mirroring  (Depoyu Başka Bir Uzak Depoya Kopyalama)
 
-- **git clone --mirror <repo_url>** ➡️ Depoyu aynen klonlar.
-- **git push --mirror <yeni_repo_url>** ➡️ Depoyu başka bir uzak depoya aynen kopyalar.
+- **git clone --mirror <repo_url>** ➡️ Repoyu aynen klonlar.
+- **git push --mirror <yeni_repo_url>** ➡️ Repoyu başka bir remote repoya aynen kopyalar.
 
 ### 🌿 Branch Yönetimi
 
-- **git branch -vv** ➡️ Tüm dalların detaylarını ve takip ettiği uzak dalı gösterir.
-- **git branch --contains <commit_id>** ➡️ Belirtilen commit’i içeren dalları listeler.
-- **git branch --merged master** ➡️ master dalına birleştirilmiş dalları gösterir.
-- **git branch --no-merged master** ➡️ master dalına henüz birleştirilmemiş dalları gösterir.
-- **git checkout -** ➡️ Önceki dalına geri döner.
-- **git checkout --orphan <yeni_branch_adı>** ➡️ Yeni bir dal oluşturur ancak önceki commit’leri içermez.
+- **git branch -vv** ➡️ Tüm branchlerin detaylarını ve takip ettiği remote branch'i gösterir.
+- **git branch --contains <commit_id>** ➡️ Belirtilen commit’i içeren branch'leri listeler.
+- **git branch --merged master** ➡️ master branch'e merge edilmiş branch'leri gösterir.
+- **git branch --no-merged master** ➡️ master branch'e henüz merge edilmemiş branchleri gösterir.
+- **git checkout -** ➡️ Önceki branch'e geri döner.
+- **git checkout --orphan <yeni_branch_adı>** ➡️ Yeni bir branch oluşturur ancak önceki commit’leri içermez.
 
 ### 🔀 Merge ve Rebase İşlemleri
 
-- **git merge --squash <branch_adı>** ➡️ Birleştirme işlemi sırasında tüm commit’leri tek bir commit’e sıkıştırır.
-- **git merge --no-commit** ➡️ Birleştirme işlemini yapar ancak commit oluşturmaz.
-- **git merge --no-ff <branch_adı>** ➡️ Fast-forward olmadan birleştirme yapar.
+- **git merge --squash <branch_adı>** ➡️ Merge işlemi sırasında tüm commit’leri tek bir commit’e sıkıştırır.
+- **git merge --no-commit** ➡️ Merge işlemini yapar ancak commit oluşturmaz.
+- **git merge --no-ff <branch_adı>** ➡️ Fast-forward olmadan merge yapar.
 - **git rebase -i HEAD~5** ➡️ Son 5 commit’i etkileşimli olarak düzenler.
-- **git rebase --onto master feature_branch** ➡️ feature_branch dalını master üzerine taşır.
+- **git rebase --onto master feature_branch** ➡️ feature_branch branch'ini master üzerine taşır.
 - **git rebase --skip** ➡️ Rebase sırasında hatalı commit’i atlar.
 - **git rebase --edit-todo** ➡️ Rebase sırasında commit listesini düzenler.
 
@@ -159,27 +159,27 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 - **git stash apply stash@{2}** ➡️ Belirtilen stash’i geri yükler.
 - **git stash pop stash@{0}** ➡️ En son saklanan değişiklikleri geri yükler ve stash listesinden siler.
 - **git stash show -p stash@{1}** ➡️ Belirtilen stash’in detaylarını gösterir.
-- **git stash branch yeni_branch** ➡️ Saklanan değişikliklerle yeni bir dal oluşturur.
+- **git stash branch yeni_branch** ➡️ Saklanan değişikliklerle yeni bir branch oluşturur.
 
 ### 🌐 Uzak Depo Yönetimi
 
-- **git remote set-url origin <yeni_url>** ➡️ Uzak depo URL’sini değiştirir.
-- **git remote prune origin** ➡️ Uzak depoda artık var olmayan dalları temizler.
-- **git push origin HEAD** ➡️ Mevcut dalı uzak depoya gönderir.
-- **git push --mirror <yeni_repo_url>** ➡️ Mevcut depoyu aynen başka bir uzak depoya kopyalar.
-- **git fetch --prune** ➡️ Uzak depodaki silinmiş dalları yerel depodan kaldırır.
+- **git remote set-url origin <yeni_url>** ➡️ Remote repo URL’sini değiştirir.
+- **git remote prune origin** ➡️ Remote repoda artık var olmayan branch'leri temizler.
+- **git push origin HEAD** ➡️ Mevcut branch'i remote repoya gönderir.
+- **git push --mirror <yeni_repo_url>** ➡️ Mevcut repoyu aynen başka bir remote repoya kopyalar.
+- **git fetch --prune** ➡️ Remote repodaki silinmiş branchleri local repodan kaldırır.
 
 ### 🔍 Hata Ayıklama ve Analiz
 
-- **git fsck --full** ➡️ Depodaki tüm nesneleri kontrol eder ve hataları gösterir.
+- **git fsck --full** ➡️ Repodaki tüm nesneleri kontrol eder ve hataları gösterir.
 - **git reflog expire --expire=now --all** ➡️ Tüm reflog kayıtlarını temizler.
-- **git gc --aggressive** ➡️ Depoyu optimize eder ve gereksiz verileri temizler.
+- **git gc --aggressive** ➡️ Repoyu optimize eder ve gereksiz verileri temizler.
 - **git blame -C -M <dosya_adı>** ➡️ Dosyadaki her satırın hangi commit tarafından değiştirildiğini detaylı gösterir.
-- **git grep -n "hata"** ➡️ Depoda belirli bir kelimeyi içeren satırları ve satır numaralarını gösterir.
+- **git grep -n "hata"** ➡️ Repoda belirli bir kelimeyi içeren satırları ve satır numaralarını gösterir.
 
 ### 🚀 Performans ve Optimizasyon
 
-- **git repack -a -d** ➡️ Depoyu yeniden paketleyerek boyutunu küçültür.
+- **git repack -a -d** ➡️ Repoyu yeniden paketleyerek boyutunu küçültür.
 - **git prune --expire=now** ➡️ Kullanılmayan nesneleri hemen temizler.
-- **git gc --auto** ➡️ Depoyu otomatik olarak temizler ve optimize eder.
+- **git gc --auto** ➡️ Repoyu otomatik olarak temizler ve optimize eder.
 - **git config --global core.compression 9** ➡️ Git’in veri sıkıştırma seviyesini artırır.
