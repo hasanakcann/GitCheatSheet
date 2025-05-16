@@ -2,34 +2,20 @@
 
 ![image](https://github.com/user-attachments/assets/1821b39f-70be-4943-b193-ff8ac46d5b1f)
 
-<details>
-  
-<summary>🔍 Git Nedir?</summary>
+## 🔍 Git Nedir?
 
 Git, dağıtık bir versiyon kontrol sistemidir (VCS). Yazılımcıların projelerdeki dosya değişikliklerini takip etmelerine, geri almalarına, dallandırmalarına(branch) ve farklı sürümleri yönetmelerine olanak tanır.
 
 ![image](https://github.com/user-attachments/assets/86aa12b7-a1ff-489d-9ca6-0f65e3c2b5d8)
 
-</details>
-
-<hr>
-
-<details>
-  
-<summary>☁️ GitHub Nedir?</summary>
+## ☁️ GitHub Nedir?
 
 GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliği yapmak için kullanılan bulut tabanlı bir platformdur.
 
 ![image](https://github.com/user-attachments/assets/8538d93f-17b9-4952-9380-f7499f0aca40)
 
-</details>
+## 🛠️ Sık Kullanılan Git Komutları
 
-<hr>
-
-<details>
-  
-<summary>🛠️ Sık Kullanılan Git Komutları</summary>
-<hr>
 <details>
   
 <summary>🖥️ Git Bash - Commit Example</summary>
