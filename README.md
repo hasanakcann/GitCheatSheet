@@ -17,8 +17,9 @@ GitHub, Git tabanlı projeleri barındırmak, paylaşmak ve üzerinde işbirliğ
 ## 🛠️ Sık Kullanılan Git Komutları
 
 <details>
-  
 <summary>🖥️ Git Bash - Commit Example</summary>
+
+---
 
 Proje dizinine gidilir. **cd source/repos/project**
 
@@ -36,9 +37,12 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
+---
+
 <details>
-    
 <summary>🔰 Temel Git Komutları</summary>
+
+---
 
 - **git init** ➡️ Yeni bir Git reposu oluşturur.
 - **git clone <repo_url>** ➡️ Mevcut bir Git reposunu kopyalar.
@@ -53,9 +57,12 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🌿 Branch Yönetimi</summary>
+
+---
 
 - **git branch** ➡️ Mevcut branchleri listeler.
 - **git branch <yeni_branch_adı>** ➡️ Yeni bir branch oluşturur.
@@ -73,9 +80,12 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🧾 Geçmiş ve Değişiklik Takibi</summary>
+
+---
 
 - **git log** ➡️ Commit geçmişini görüntüler.
 - **git log --oneline** ➡️ Commit geçmişini kısa formatta gösterir.
@@ -88,9 +98,12 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🌐 Uzak Repo Yönetimi</summary>
+
+---
 
 - **git remote -v** ➡️ Remote repoları listeler.
 - **git remote add <name> <repo_url>** ➡️ Yeni bir remote repo ekler.
@@ -101,9 +114,12 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🔖 Etiketleme ve Sürümleme</summary>
+
+---
 
 - **git tag <etiket_adı>** ➡️ Belirtilen commit’e bir etiket ekler.
 - **git tag -a <etiket_adı> -m "Açıklama"** ➡️ Açıklamalı bir etiket ekler.
@@ -115,9 +131,12 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
-<details>
-  
+---
+
+<details> 
 <summary>⚡ Alias (Kısayollar) Kullanımı</summary>
+
+---
 
 - **git config --global alias.st status** ➡️ git st komutunu git status olarak çalıştırır.
 - **git config --global alias.co checkout** ➡️ git co komutunu git checkout olarak çalıştırır.
@@ -125,9 +144,12 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🧩 Git Hooks (Otomasyon)</summary>
+
+---
 
 - **pre-commit** ➡️ Commit işleminden önce çalıştırılır.
 - **commit-msg** ➡️ Commit mesajı yazıldıktan sonra çalıştırılır.
@@ -135,36 +157,48 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
+---
+
 <details>
-  
 <summary>📦 Submodules (Alt Depolar)</summary>
+
+---
 
 - **git submodule add <repo_url>** ➡️ Mevcut projeye bir alt modül ekler.
 - **git submodule update --init --recursive** ➡️ Alt modülleri günceller ve başlatır.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🧱 Worktrees (Çoklu Çalışma Dizinleri)</summary>
+
+---
 
 - **git worktree add ../yeni_dizin <branch_adı>** ➡️ Yeni bir çalışma dizini oluşturur.
 - **git worktree list** ➡️ Mevcut çalışma dizinlerini listeler.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🧊 LFS (Large File Storage)</summary>
+
+---
 
 - **git lfs install** ➡️ Git LFS’i yükler.
 - **git lfs track "*.psd"** ➡️ Belirtilen dosya türünü LFS ile takip eder.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🐞 Bisect (Hatalı Commit’i Bulma)</summary>
+
+---
 
 - **git bisect start** ➡️ Bisect işlemini başlatır.
 - **git bisect bad** ➡️ Hatalı commit’i işaretler.
@@ -172,27 +206,36 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🔁 Reflog (Commit Geçmişi)</summary>
+
+---
 
 - **git reflog** ➡️ Tüm Git işlemlerinin geçmişini gösterir.
 - **git reset --hard HEAD@{3}** ➡️ 3 işlem önceki duruma geri döner.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🪞 Mirroring  (Depoyu Başka Bir Uzak Depoya Kopyalama)</summary>
+
+---
 
 - **git clone --mirror <repo_url>** ➡️ Repoyu aynen klonlar.
 - **git push --mirror <yeni_repo_url>** ➡️ Repoyu başka bir remote repoya aynen kopyalar.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🌿 İleri Düzey Branch Yönetimi</summary>
+
+---
 
 - **git branch -vv** ➡️ Tüm branchlerin detaylarını ve takip ettiği remote branch'i gösterir.
 - **git branch --contains <commit_id>** ➡️ Belirtilen commit’i içeren branch'leri listeler.
@@ -203,9 +246,12 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🔀 Merge ve Rebase İşlemleri</summary>
+
+---
 
 - **git merge --squash <branch_adı>** ➡️ Merge işlemi sırasında tüm commit’leri tek bir commit’e sıkıştırır.
 - **git merge --no-commit** ➡️ Merge işlemini yapar ancak commit oluşturmaz.
@@ -217,9 +263,12 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
+---
+
 <details>
-  
 <summary>📥 Stash Kullanımı</summary>
+
+---
 
 - **git stash push -m "Geçici değişiklikler"** ➡️ Saklanan değişikliklere açıklama ekler.
 - **git stash apply stash@{2}** ➡️ Belirtilen stash’i geri yükler.
@@ -229,9 +278,12 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🌐 İleri Düzey Uzak Repo Yönetimi</summary>
+
+---
 
 - **git remote set-url origin <yeni_url>** ➡️ Remote repo URL’sini değiştirir.
 - **git remote prune origin** ➡️ Remote repoda artık var olmayan branch'leri temizler.
@@ -241,9 +293,12 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🔍 Hata Ayıklama ve Analiz</summary>
+
+---
 
 - **git fsck --full** ➡️ Repodaki tüm nesneleri kontrol eder ve hataları gösterir.
 - **git reflog expire --expire=now --all** ➡️ Tüm reflog kayıtlarını temizler.
@@ -253,9 +308,12 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
+---
+
 <details>
-  
 <summary>🚀 Performans ve Optimizasyon</summary>
+
+---
 
 - **git repack -a -d** ➡️ Repoyu yeniden paketleyerek boyutunu küçültür.
 - **git prune --expire=now** ➡️ Kullanılmayan nesneleri hemen temizler.
@@ -264,4 +322,4 @@ Sırasıyla komutlar çalıştırılır.
 
 </details>
 
-</details>
+---
