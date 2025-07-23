@@ -45,6 +45,20 @@ GitHub, Git tabanlı yazılım projelerinin bulut ortamında barındırılması,
 
 ## 🛠️ Sık Kullanılan Git Komutları
 
+**🖥️ Git Bash - Commit Example**
+
+```text
+Proje dizinine gidilir. cd source/repos/project
+
+Sırasıyla komutlar çalıştırılır.
+
+git pull origin develop
+git status
+git add .
+git commit -m "fixed"
+git push origin develop
+```
+
 **✅ Temel Git İş Akışı**
 
 ```bash
